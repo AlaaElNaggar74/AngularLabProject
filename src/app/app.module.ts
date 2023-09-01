@@ -8,6 +8,9 @@ import { AbouteComponent } from './aboute/aboute.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ChildSkilComponent } from './skills/child-skil/child-skil.component';
+import { ChildPortfolioComponent } from './portfolio/child-portfolio/child-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { FooterComponent } from './footer/footer.component';
     AbouteComponent,
     SkillsComponent,
     PortfolioComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarComponent,
+    ChildSkilComponent,
+    ChildPortfolioComponent
     
   ],
   imports: [

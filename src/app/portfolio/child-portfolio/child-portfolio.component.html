@@ -1,0 +1,22 @@
+<div class="images row text-white text-center">
+  <!--Box-Num-1-->
+
+  <div
+    class="box col-md-6 col-lg-4 mb-3"
+    *ngFor="let port of sendPaerntPortFolio ; let i=index"  
+  >
+    <a href="">
+      <div
+      [class]="i%2==0 ? 'bg-dark-subtle':'bg-dark'"
+        class="boxCon  d-flex align-items-center justify-content-center rounded-3 border border-2 border-black"
+      >
+        <div>
+            <h4>[ {{ port.id }} ]</h4>
+          <h3>{{ port.title }}</h3>
+          <P>{{ port.description }}</P>
+          <p class="fs-4 text-danger">Price : {{port.price}} $</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
