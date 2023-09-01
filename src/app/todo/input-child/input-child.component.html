@@ -1,0 +1,27 @@
+<div class="to m-auto mt-3 py-5 px-3 bg-info rounded-2">
+  <h2 class="text-center mb-2">Input Field</h2>
+  <div class="in d-flex align-items-center">
+    <div class="input-group">
+      <span class="input-group-text" id="basic-addon1">@</span>
+      <input
+      [(ngModel)]="val"
+        #inpValue
+        type="text"
+        value=""
+        class="form-control rounded-0 py-3"
+        placeholder="Enter Your New Items"
+        aria-label="Username"
+        aria-describedby="basic-addon1"
+        
+      />
+    </div>
+    <div class="bt">
+      <button
+        class="mt-0 btn btn-success rounded-0 py-3 px-4 fw-bold"
+        (click)="passElementToParent(inpValue.value)"
+      >
+        Add
+      </button>
+    </div>
+  </div>
+</div>

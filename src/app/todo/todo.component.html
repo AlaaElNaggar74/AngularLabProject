@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="tod col-md-8 m-auto">
+    <h1 class="text-center text-danger">ToDo List</h1>
+
+    <app-input-child
+      [eleId]="itemsArr"
+      (sentElemToParent)="passElementToParent($event)"
+    ></app-input-child>
+    <app-display-child
+      [eleItems]="itemsArr"
+      (deleteElem)="deleteIyem($event)"
+    ></app-display-child>
+  </div>
+</div>

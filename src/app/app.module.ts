@@ -11,6 +11,11 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ChildSkilComponent } from './skills/child-skil/child-skil.component';
 import { ChildPortfolioComponent } from './portfolio/child-portfolio/child-portfolio.component';
+import { HomeComponent } from './home/home.component';
+import { TodoComponent } from './todo/todo.component';
+import { InputChildComponent } from './todo/input-child/input-child.component';
+import { DisplayChildComponent } from './todo/display-child/display-child.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,14 +27,14 @@ import { ChildPortfolioComponent } from './portfolio/child-portfolio/child-portf
     FooterComponent,
     NavbarComponent,
     ChildSkilComponent,
-    ChildPortfolioComponent
-    
+    ChildPortfolioComponent,
+    HomeComponent,
+    TodoComponent,
+    InputChildComponent,
+    DisplayChildComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule,FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
