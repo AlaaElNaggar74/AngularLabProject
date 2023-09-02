@@ -1,11 +1,8 @@
 <div class="container py-5">
   <h1 class="mb-3">Protfolio</h1>
-
- 
-
-  <app-child-portfolio
-      [sendPaerntPortFolio]="arrPortFolio"
-    ></app-child-portfolio>
+  <div class="images row text-white text-center">
+    <ng-container *ngFor="let port of arrPortFolio; let i = index">
+      <app-child-portfolio  class="box col-md-6 col-lg-4 mb-3" [sendPaerntPortFolio]="port"></app-child-portfolio
+    ></ng-container>
+  </div>
 </div>
-
-

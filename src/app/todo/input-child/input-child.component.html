@@ -1,18 +1,21 @@
-<div class="to m-auto mt-3 py-5 px-3 bg-info rounded-2">
+<div class="to m-auto mt-3 py-5 px-3 bg-success-subtle rounded-2">
   <h2 class="text-center mb-2">Input Field</h2>
   <div class="in d-flex align-items-center">
-    <div class="input-group ">
-      <span class="input-group-text" id="basic-addon1">@</span>
+    <div class="input-group">
+      <span
+        class="input-group-text border-1 border-light px-3 fs-3 fw-bold"
+        id="basic-addon1"
+        >@</span
+      >
       <input
-      [(ngModel)]="val"
+        [(ngModel)]="val"
         #inpValue
         type="text"
         value=""
         class="form-control rounded-0 py-3 shadow-none border-0"
-        placeholder="Enter Your New Items"
+        placeholder="Enter Your New Book"
         aria-label="Username"
         aria-describedby="basic-addon1"
-        
       />
     </div>
     <div class="bt">

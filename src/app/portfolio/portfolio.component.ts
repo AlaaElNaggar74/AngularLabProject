@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class PortfolioComponent {
 
 
+  
+
   arrPortFolio:any=[
     {
       "id": 1,
@@ -90,12 +92,7 @@ export class PortfolioComponent {
       "stock": 32,
       "brand": "Huawei",
       "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
-      "images": [
-      "https://i.dummyjson.com/data/products/5/1.jpg",
-      "https://i.dummyjson.com/data/products/5/2.jpg",
-      "https://i.dummyjson.com/data/products/5/3.jpg"
-      ]
+     
       },
       {
       "id": 6,

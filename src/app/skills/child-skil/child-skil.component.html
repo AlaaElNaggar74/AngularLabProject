@@ -1,8 +1,8 @@
 
 
-<div class="d-flex align-items-stretch mb-1" *ngFor="let skill of sendPaernt">
+<div class="d-flex align-items-stretch mb-1">
   <p class="fs-5 py-2 mb-0 bg-secondary text-center proItem w-25">
-    {{ skill.name }}
+    {{ sendPaernt.name }}
   </p>
 
   <div
@@ -15,7 +15,7 @@
   >
     <div
       class="progress-bar bg-dark-subtle"
-      [style]="{ width: skill.per }"
+      [style]="{ width: sendPaernt.per }"
     ></div>
   </div>
 </div>

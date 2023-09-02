@@ -22,10 +22,10 @@
           <p class="my-1">Lorem ipsum dolor sit amet.</p>
         </div>
         <div class="col-md-8">
-
-        <app-child-skil [sendPaernt]="arrSkill"></app-child-skil>
-        
-
+          
+          <ng-container *ngFor="let skill of arrSkill">
+            <app-child-skil [sendPaernt]="skill"></app-child-skil>
+          </ng-container>
         </div>
       </div>
     </div>
