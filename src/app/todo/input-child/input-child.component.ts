@@ -8,24 +8,23 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class InputChildComponent {
   // inpValue:any;
 
-  val:any;
-  @Input() eleId:any;
+  val: any;
+
+  @Input() eleId: any;
   @Output() sentElemToParent = new EventEmitter();
 
   constructor() {}
 
   passElementToParent(itemId: any) {
     console.log(itemId);
-
-    this.val='';
-    this.sentElemToParent.emit(itemId);
+    if (this.val) {
+      this.val = '';
+      this.sentElemToParent.emit(itemId);
+    }
   }
-
- 
 
   // lo(){
   //   console.log(this.eleId);
-    
-  // }
 
+  // }
 }

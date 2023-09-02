@@ -1,11 +1,11 @@
-<div class="to m-auto mt-1 py-2 px-3 bg-info rounded-2">
-  <h3 class="text-center mb-2">All List Of Your Book</h3>
-  <div class="overflow-x-auto">
-    <table class="table text-center">
+<div class="to m-auto mt-1 py-2 px-3 bg-info rounded-2 bg-opacity-50">
+  <h3 class="text-center py-3">All List Of Your Book</h3>
+  <div class="overflow-x-auto rounded-2">
+    <table class="table text-center rounded-2">
       <thead>
         <tr>
           <th>#</th>
-          <th>Items</th>
+          <th>Products</th>
           <th>State</th>
           <th>Remove</th>
         </tr>
@@ -13,7 +13,7 @@
       <tbody>
         <tr *ngFor="let item of eleItems; let i = index">
           <th>{{ i + 1 }}</th>
-          <td [class]="item.trig ? '' : 'text-decoration-line-through'">
+          <td [class]="item.trig ? 'fw-bold' : 'text-decoration-line-through '">
             {{ item.name }}
           </td>
           <!-- <td [class]="">bool && item.id==specId?<del>{{item.name}}</del>:{{item.name}}</td> -->
@@ -21,7 +21,7 @@
           <td>
             <button
               [class]="
-                item.trig ? 'btn btn-warning  ' : 'btn btn-secondary '
+                item.trig ? 'comple btn btn-warning' : ' comple btn btn-secondary'
               "
               (click)="changex(item.id)"
             >

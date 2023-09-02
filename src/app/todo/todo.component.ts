@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class TodoComponent {
   itemsArr: any = [
-    { name: 'items-a', id: 1, trig: true },
-    { name: 'items-b', id: 2, trig: true },
-    { name: 'items-c', id: 3, trig: true },
-    { name: 'items-d', id: 4, trig: true },
+    { name: 'Item-A', id: 1, trig: true },
+    { name: 'Item-B', id: 2, trig: true },
+    // { name: 'Item-C', id: 3, trig: true },
+    // { name: 'Item-D', id: 4, trig: true },
   ];
 
   passElementToParent(newId: any) {
