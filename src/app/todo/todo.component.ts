@@ -7,16 +7,17 @@ import { Component } from '@angular/core';
 })
 export class TodoComponent {
   itemsArr: any = [
-    { name: 'items-a', id: 1 },
-    { name: 'items-b', id: 2 },
-    { name: 'items-c', id: 3 },
-    { name: 'items-d', id: 4 },
+    { name: 'items-a', id: 1, trig: true },
+    { name: 'items-b', id: 2, trig: true },
+    { name: 'items-c', id: 3, trig: true },
+    { name: 'items-d', id: 4, trig: true },
   ];
 
   passElementToParent(newId: any) {
     this.itemsArr.push({
       name: newId,
       id: Math.round(Math.random() * 1000000),
+      trig: true,
     });
     console.log(this.itemsArr);
     console.log(newId);
@@ -26,5 +27,19 @@ export class TodoComponent {
     this.itemsArr = this.itemsArr.filter((ele: any) => {
       return ele.id != xId;
     });
+  }
+  changeItem(xId: any) {
+    // this.itemsArr = this.itemsArr.map((ele: any) => {
+    //   return ele.id != xId;
+    // });
+    this.itemsArr = this.itemsArr.map((ele: any) => {
+      return ele.id == xId ? { ...ele, trig: !ele.trig } : { ...ele };
+    });
+
+    // this.itemsArr.forEach((element:any) => {
+    //   if (element.id == xId) {
+    //     element.trig=!element.trig;
+    //   }
+    // });
   }
 }
